@@ -38,6 +38,7 @@ public class object2D extends ShaderProgram{
 
         //Bind VBO
         glEnableVertexAttribArray(0); //Mau mengirim data vertex yang sudah disimpan ke vbo index ke 0
+
         glBindBuffer(GL_ARRAY_BUFFER, vbo);
         glVertexAttribPointer(0, 3, GL_FLOAT, false, 0, 0); //Tipe data GL_FLOAT tergantung dengan apa yang kita kirim (Tipe datanya float primitif)
         //Pointer sama aja kyk First, jadi mulai dari index ke 0
